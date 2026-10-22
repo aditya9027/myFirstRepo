@@ -1,8 +1,8 @@
-FROM openjdk:17-jdk-alpine
+FROM eclipse-temurin:21-jdk
 
 WORKDIR /app
 
-COPY first.java /app/first.java
+COPY . .
 
 RUN javac first.java
 
